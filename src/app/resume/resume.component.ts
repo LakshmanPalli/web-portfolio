@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './resume.component.html',
-  styleUrl: './resume.component.css'
+  styleUrls: ['./resume.component.css']  // Fixed to styleUrls
 })
-export class ResumeComponent {
-
-}
+export class ResumeComponent {}

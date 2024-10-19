@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; // Import CommonModule for Angular directives
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],  // Add CommonModule to use Angular features like ngIf, ngFor, etc.
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrls: ['./projects.component.css']  // Note it's `styleUrls` not `styleUrl`
 })
-export class ProjectsComponent {
-
-}
+export class ProjectsComponent {}
